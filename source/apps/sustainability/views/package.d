@@ -1,6 +1,6 @@
-module apps.myname.views;
+module apps.sustainability.views;
 
 public { // Packages
-  import apps.myname.views.actions;
-  import apps.myname.views.forms;
+  import apps.sustainability.views.actions;
+  import apps.sustainability.views.forms;
 }

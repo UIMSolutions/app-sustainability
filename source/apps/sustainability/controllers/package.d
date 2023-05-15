@@ -1,7 +1,7 @@
-module apps.myname.controllers;
+module apps.sustainability.controllers;
 
 public { // Packages
-  import apps.myname.controllers.actions;
-  import apps.myname.controllers.components;
-  import apps.myname.controllers.pages;
+  import apps.sustainability.controllers.actions;
+  import apps.sustainability.controllers.components;
+  import apps.sustainability.controllers.pages;
 }

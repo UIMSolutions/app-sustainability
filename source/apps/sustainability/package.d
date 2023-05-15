@@ -1,4 +1,4 @@
-module apps.myname;
+module apps.sustainability;
 
 mixin(ImportPhobos!());
 
@@ -8,7 +8,7 @@ public { // required uim libraries
   import uim.apps;
 }
 
-public { // admin-myname libraries
-  import apps.myname.controllers;
-  import apps.myname.views;
+public { // admin-sustainability libraries
+  import apps.sustainability.controllers;
+  import apps.sustainability.views;
 }

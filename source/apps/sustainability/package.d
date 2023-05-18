@@ -10,5 +10,8 @@ public { // required uim libraries
 
 public { // admin-sustainability libraries
   import apps.sustainability.controllers;
+  import apps.sustainability.helpers;
+  import apps.sustainability.routers;
+  import apps.sustainability.tests;
   import apps.sustainability.views;
 }

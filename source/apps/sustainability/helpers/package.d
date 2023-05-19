@@ -1,1 +1,1 @@
-module dbs.sustainability.helpers;
+module apps.sustainability.helpers;

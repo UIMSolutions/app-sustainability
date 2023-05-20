@@ -15,3 +15,12 @@ public { // admin-sustainability libraries
   import apps.sustainability.tests;
   import apps.sustainability.views;
 }
+
+static this() {
+  AppRegistry.register(  
+    App
+    .name("sustainabilityApp")
+    .rootPath("/apps/sustainability")
+    .addRoute(Route("", HTTPMethod.GET, SUSIndexPageController))
+    .addRoute(Route("/", HTTPMethod.GET, SUSIndexPageController)));
+}

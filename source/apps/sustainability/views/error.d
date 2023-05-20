@@ -3,20 +3,20 @@
   License: Subject to the terms of the Apache 2.0 license, as written in the included LICENSE.txt file.  
   Authors: Ozan Nurettin Süel (Sicherheitsschmiede)                                                      
 **********************************************************************************************************/
-module apps.myname.views.error;
+module apps.sustainability.views.error;
 
-import apps.myname;
+import apps.sustainability;
 @safe:
 
-class DMYNAMEErrorView : DView {
-  mixin(ViewThis!("MYNAMEErrorView"));
+class DSUSErrorView : DView {
+  mixin(ViewThis!("SUSErrorView"));
 
   override void beforeH5(STRINGAA options = null) {
     super.beforeH5(options);
   }
 
   override DH5Obj[] toH5(STRINGAA options = null) {
-    debugMethodCall(moduleName!DMYNAMEErrorView~":DMYNAMEErrorView("~this.name~")::toH5");
+    debugMethodCall(moduleName!DSUSErrorView~":DSUSErrorView("~this.name~")::toH5");
     super.toH5(options);
 
     return [
@@ -24,4 +24,4 @@ class DMYNAMEErrorView : DView {
     ].toH5;
   }
 }
-mixin(ViewCalls!("MYNAMEErrorView"));
+mixin(ViewCalls!("SUSErrorView"));

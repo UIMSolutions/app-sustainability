@@ -8,11 +8,11 @@ module apps.sustainability.views.index;
 import apps.sustainability;
 @safe:
 
-class DSUSIndexView : DView {
-  mixin(ViewThis!("SUSIndexView"));
+class DIndexView : DView {
+  mixin(ViewThis!("IndexView"));
 
   override DH5Obj[] toH5(STRINGAA options = null) {
-    debugMethodCall(moduleName!DSUSIndexView~":DSUSIndexView("~this.name~")::toH5");
+    debugMethodCall(moduleName!DIndexView~":DIndexView("~this.name~")::toH5");
     super.toH5(options);
 
     return [
@@ -20,4 +20,4 @@ class DSUSIndexView : DView {
     ].toH5;
   }
 }
-mixin(ViewCalls!("SUSIndexView"));
+mixin(ViewCalls!("IndexView"));

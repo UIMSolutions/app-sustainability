@@ -8,14 +8,14 @@ module apps.sustainability.controllers.pages.index;
 import apps.sustainability;
 @safe:
 
-class DSUSIndexPageController : DAPPPageController {
-  mixin(ControllerThis!("SUSIndexPageController"));
+class DIndexPageController : DAPPPageController {
+  mixin(ControllerThis!("IndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(SUSIndexView(this));
+      .view(IndexView(this));
   }
 }
-mixin(ControllerCalls!("SUSIndexPageController"));
+mixin(ControllerCalls!("IndexPageController"));

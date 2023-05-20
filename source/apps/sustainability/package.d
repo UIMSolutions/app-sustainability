@@ -21,6 +21,6 @@ static this() {
     App
     .name("sustainabilityApp")
     .rootPath("/apps/sustainability")
-    .addRoute(Route("", HTTPMethod.GET, SUSIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, SUSIndexPageController)));
+    .addRoute(Route("", HTTPMethod.GET, IndexPageController))
+    .addRoute(Route("/", HTTPMethod.GET, IndexPageController)));
 }

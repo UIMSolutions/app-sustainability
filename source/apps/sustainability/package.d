@@ -17,7 +17,7 @@ public { // admin-sustainability libraries
 }
 
 static this() {
-  AppRegistry.register(  
+  AppRegistry.register("apps/sustainability",  
     App
     .name("sustainabilityApp")
     .rootPath("/apps/sustainability")

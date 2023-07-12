@@ -18,9 +18,11 @@ public { // admin-sustainability libraries
 
 static this() {
   AppRegistry.register("apps/sustainability",  
-    App
-    .name("sustainabilityApp")
-    .rootPath("/apps/sustainability")
-    .addRoute(Route("", HTTPMethod.GET, IndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, IndexPageController)));
+    App("sustainabilityApp", "/apps/sustainability")
+      .importTranslations()
+      .addRoutes(
+        Route("", HTTPMethod.GET, IndexPageController),
+        Route("/", HTTPMethod.GET, IndexPageController)
+      )
+    );
 }

@@ -8,7 +8,7 @@ module apps.sustainability.controllers.pages.index;
 import apps.sustainability;
 @safe:
 
-class DIndexPageController : DAPPPageController {
+class DIndexPageController : DPageController {
   mixin(ControllerThis!("IndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {

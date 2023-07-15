@@ -8,15 +8,15 @@ module apps.sustainability.views.error;
 import apps.sustainability;
 @safe:
 
-class DSUSErrorView : DView {
-  mixin(ViewThis!("SUSErrorView"));
+class DErrorView : DView {
+  mixin(ViewThis!("ErrorView"));
 
   override void beforeH5(STRINGAA options = null) {
     super.beforeH5(options);
   }
 
   override DH5Obj[] toH5(STRINGAA options = null) {
-    debugMethodCall(moduleName!DSUSErrorView~":DSUSErrorView("~this.name~")::toH5");
+    debugMethodCall(moduleName!DErrorView~":DErrorView("~this.name~")::toH5");
     super.toH5(options);
 
     return [
@@ -24,4 +24,4 @@ class DSUSErrorView : DView {
     ].toH5;
   }
 }
-mixin(ViewCalls!("SUSErrorView"));
+mixin(ViewCalls!("ErrorView"));

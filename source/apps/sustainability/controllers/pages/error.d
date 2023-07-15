@@ -8,14 +8,14 @@ module apps.sustainability.controllers.pages.error;
 import apps.sustainability;
 @safe:
 
-class DSUSErrorPageController : DAPPPageController {
-  mixin(ControllerThis!("SUSErrorPageController"));
+class DErrorPageController : DPageController {
+  mixin(ControllerThis!("ErrorPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(SUSErrorView(this));
+      .view(ErrorView(this));
   }
 }
-mixin(ControllerCalls!("SUSErrorPageController"));
+mixin(ControllerCalls!("ErrorPageController"));

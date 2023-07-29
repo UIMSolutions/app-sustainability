@@ -17,12 +17,21 @@ public { // admin-sustainability libraries
 }
 
 static this() {
-  AppRegistry.register("apps.sustainability",  
-    App("sustainabilityApp", "apps/sustainability")
-      .importTranslations()
-      .addRoutes(
-        Route("", HTTPMethod.GET, IndexPageController),
-        Route("/", HTTPMethod.GET, IndexPageController)
-      )
+  // Create app
+  auto myApp = App("sustainabilityApp", "apps/sustainability");
+
+  // Customize app
+  with(myApp) {
+    importTranslations;
+    addControllers([
+      "sustain.index": IndexPageController
+    ]);
+    addRoutes(
+      Route("", HTTPMethod.GET, controller("sustain.index")),
+      Route("/", HTTPMethod.GET, controller("sustain.index"))
     );
+  }
+
+  // Register app
+  AppRegistry.register("apps.sustainability", myApp);
 }
